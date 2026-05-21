@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gather Homestead</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site">
+      <section class="hero" aria-label="Gather Homestead">
+        <div class="container">
+          <div class="hero__top">
+            <div class="brand" aria-label="Brand">
+              <div class="brand__mark" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+                  <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" opacity="0.85" />
+                  <path
+                    d="M16 40c8-6 24-6 32 0M22 28c6-10 14-10 20 0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    opacity="0.85"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <nav class="dots" aria-label="Sections">
+              <a class="dot dot--active" href="#top" aria-label="Go to top"></a>
+              <a class="dot" href="#offer" aria-label="Go to What We Offer"></a>
+              <a class="dot" href="#about" aria-label="Go to About"></a>
+              <a class="dot" href="#contact" aria-label="Go to Contact"></a>
+            </nav>
+          </div>
+
+          <div class="hero__title">
+            <p class="hero__kicker">Gather</p>
+            <h1 class="hero__headline">Homestead</h1>
+          </div>
+        </div>
+      </section>
+
+      <main id="main" class="content">
+        <div class="container">
+          <section class="card card--intro" id="top">
+            <p>
+              We want to know you! Join the family at
+              <span class="em">Gather Homestead</span>.
+            </p>
+          </section>
+
+          <section class="card" id="offer" aria-labelledby="offer-title">
+            <h2 id="offer-title" class="section-title">What We Offer</h2>
+
+            <div class="offers" role="list">
+              <article class="offer" role="listitem">
+                <img class="offer__img" src="assets/offer-workshops.svg" alt="Workshop on the farm (placeholder)" />
+                <h3 class="offer__title">Workshops</h3>
+                <p class="offer__text">
+                  Seasonal classes, hands-on skills, and community days for all ages.
+                </p>
+                <div class="offer__seal" aria-hidden="true">G</div>
+              </article>
+
+              <article class="offer" role="listitem">
+                <img class="offer__img" src="assets/offer-produce.svg" alt="Fresh produce (placeholder)" />
+                <h3 class="offer__title">Produce</h3>
+                <p class="offer__text">
+                  Fresh-picked vegetables, herbs, and pantry staples grown with care.
+                </p>
+                <div class="offer__seal" aria-hidden="true">G</div>
+              </article>
+
+              <article class="offer" role="listitem">
+                <img class="offer__img" src="assets/offer-classes.svg" alt="Homestead class (placeholder)" />
+                <h3 class="offer__title">Homestead Class</h3>
+                <p class="offer__text">
+                  Learn the basics: soil, animals, cooking, preservation, and more.
+                </p>
+                <div class="offer__seal" aria-hidden="true">G</div>
+              </article>
+            </div>
+          </section>
+
+          <section class="divider" aria-label="Farm illustrations">
+            <div class="divider__line" aria-hidden="true"></div>
+            <div class="divider__animals" aria-hidden="true">
+              <img src="assets/animals-strip.svg" alt="" />
+            </div>
+          </section>
+
+          <section class="two-col" id="about" aria-label="About Gather Homestead">
+            <div class="card card--text">
+              <h2 class="section-title section-title--left">We Provide the Highest<br />Quality Products</h2>
+              <p class="muted">
+                From seed to table, we focus on thoughtful practices and honest food. We believe in
+                learning together, celebrating the seasons, and sharing what we grow.
+              </p>
+              <p class="muted">
+                Visit us for a market day, join a workshop, or simply stop by to say hello.
+              </p>
+            </div>
+
+            <div class="card card--image">
+              <img src="assets/feature-produce.svg" alt="Fresh harvest (placeholder)" />
+              <div class="badge" aria-hidden="true">G</div>
+            </div>
+          </section>
+
+          <section class="two-col two-col--flip" aria-label="Events and experiences">
+            <div class="card card--image">
+              <img src="assets/feature-people.svg" alt="People at the farm (placeholder)" />
+            </div>
+
+            <div class="card card--note">
+              <h2 class="section-title section-title--left">How it all Began</h2>
+              <p class="muted">
+                Gather Homestead started as a small patch of land and a big idea: make a place where
+                good food and good people meet. Now we grow, teach, and host with the same spirit.
+              </p>
+              <div class="badge badge--edge" aria-hidden="true">G</div>
+            </div>
+          </section>
+
+          <section class="contact" id="contact" aria-label="Get in touch">
+            <div class="contact__inner">
+              <h2 class="section-title section-title--left">Get in touch with us!</h2>
+              <div class="contact__grid">
+                <div class="contact__info">
+                  <p class="muted">
+                    <strong class="label">Phone</strong><br />
+                    (555) 012-3456
+                  </p>
+                  <p class="muted">
+                    <strong class="label">Email</strong><br />
+                    hello@gatherhomestead.com
+                  </p>
+                  <p class="muted">
+                    <strong class="label">Address</strong><br />
+                    100 Country Lane, Gather, USA
+                  </p>
+                </div>
+
+                <form class="contact__form" action="#" method="post">
+                  <label class="field">
+                    <span class="field__label">Name</span>
+                    <input class="field__input" name="name" autocomplete="name" />
+                  </label>
+                  <label class="field">
+                    <span class="field__label">Email</span>
+                    <input class="field__input" name="email" type="email" autocomplete="email" />
+                  </label>
+                  <label class="field field--full">
+                    <span class="field__label">Message</span>
+                    <textarea class="field__input field__input--area" name="message" rows="3"></textarea>
+                  </label>
+                  <button class="btn" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <small>© <span id="year"></span> Gather Homestead</small>
+          </footer>
+        </div>
+      </main>
+    </header>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
