@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Honomi Rice</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+  <header class="site">
+
+    <!-- HERO -->
+
+    <section class="hero" aria-label="Honomi Rice">
+
+      <!-- VIDEO BACKGROUND -->
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="assets/DJI_0226.mp4" type="video/mp4">
+      </video>
+
+      <!-- DARK OVERLAY -->
+      <div class="hero__overlay"></div>
+
+      <div class="container">
+
+        <div class="hero__top">
+
+          <div class="brand" aria-label="Brand">
+
+            <div class="brand__mark" aria-hidden="true">
+
+              <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  opacity="0.85"
+                />
+
+                <path
+                  d="M16 40c8-6 24-6 32 0M22 28c6-10 14-10 20 0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  opacity="0.85"
+                />
+
+              </svg>
+
+            </div>
+
+          </div>
+
+          <nav class="dots" aria-label="Sections">
+
+            <a class="dot dot--active" href="#top"></a>
+            <a class="dot" href="#offer"></a>
+            <a class="dot" href="#about"></a>
+            <a class="dot" href="#contact"></a>
+
+          </nav>
+
+        </div>
+
+        <div class="hero__title">
+
+          <p class="hero__kicker">
+            Organic Japanese Rice
+          </p>
+
+          <h1 class="hero__headline">
+            HONOMI
+          </h1>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- MAIN -->
+
+    <main id="main" class="content">
+
+      <div class="container">
+
+        <!-- STORY -->
+
+        <section class="card card--intro" id="top">
+
+          <h2 class="section-title">
+            The Story of Our Rice
+          </h2>
+
+          <p class="intro-text">
+            Honomi is a fully organic Japanese rice grown in Bali
+            with one simple mission:
+            to support local farmers while helping protect Bali’s
+            agricultural land and natural ecosystems. By creating high-value Japanese rice together with local farmers,
+            we aim to make farming more sustainable,
+            profitable, and worth preserving for future generations. Every grain of Honomi rice is cultivated with deep respect
+            for the Earth, following the natural wisdom of
+            chemical-free agriculture.
+
+          </p>
+
+          <p class="intro-text">
+            We believe truly good rice comes from healthy soil,
+            clean water, and farming methods that work alongside nature.
+          </p>
+
+          <a class="learn-btn" href="farming-methods.html">
+            Learn more about our farming methods →
+          </a>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section
+          class="two-col"
+          id="about"
+          aria-label="About Honomi Rice"
+        >
+
+          <div class="card card--text">
+
+            <h2 class="section-title section-title--left">
+              Pak Putu
+            </h2>
+
+            <p class="muted">
+              Introducing Pak Putu,
+              the farmer behind Honomi,
+              who carefully grows and takes care of every grain
+              by hand from start to finish.
+            </p>
+
+          </div>
+
+          <div class="card card--image">
+
+            <img
+              src="assets/IMG_0381.jpg"
+              alt="Pak Putu in the rice field"
+            />
+
+          </div>
+
+        </section>
+
+        <!-- BUY -->
+
+        <section
+          class="contact"
+          id="contact"
+          aria-label="How to buy Honomi rice"
+        >
+
+          <div class="contact__inner">
+
+            <h2 class="section-title">
+              How to Buy Our Rice
+            </h2>
+
+            <div class="buy-links">
+
+              <a
+                class="buy-link"
+                href="https://www.greenschool.org/"
+                target="_blank"
+              >
+                Green School
+              </a>
+
+              <a
+                class="buy-link"
+                href="https://delibali.com/"
+                target="_blank"
+              >
+                DeliBali
+              </a>
+
+              <a
+                class="buy-link"
+                href="https://ma-organic.com/"
+                target="_blank"
+              >
+                MA
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+          <small>
+            © <span id="year"></span> Honomi Rice
+          </small>
+
+        </footer>
+
+      </div>
+
+    </main>
+
+  </header>
+
+  <script>
+    document.getElementById("year").textContent =
+      String(new Date().getFullYear());
+  </script>
+
+</body>
+</html>
