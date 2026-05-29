@@ -74,16 +74,7 @@
         </h2>
 
         <p class="intro-text">
-          At Honomi,
-          we believe healthy rice begins with healthy land.
-          Every farming decision is made with long-term
-          sustainability and ecological balance in mind.
-        </p>
-
-        <p class="intro-text">
-          We work closely with local Balinese farmers
-          to preserve traditional agricultural wisdom while
-          growing premium organic Japanese rice naturally.
+          We grow our rice without chemicals, working in harmony with nature and carefully protecting the balance of the ecosystem. Every step of our farming process is guided by our belief that agriculture should preserve the land, not harm it. 
         </p>
 
       </section>
@@ -102,7 +93,12 @@
 
         <div class="offers">
 
-          <article class="offer">
+          <!-- CARD 1 -->
+
+          <article
+            class="offer"
+            data-popup="popup1"
+          >
 
             <img
               class="offer__img"
@@ -116,7 +112,12 @@
 
           </article>
 
-          <article class="offer">
+          <!-- CARD 2 -->
+
+          <article
+            class="offer"
+            data-popup="popup2"
+          >
 
             <img
               class="offer__img"
@@ -130,7 +131,12 @@
 
           </article>
 
-          <article class="offer">
+          <!-- CARD 3 -->
+
+          <article
+            class="offer"
+            data-popup="popup3"
+          >
 
             <img
               class="offer__img"
@@ -146,42 +152,450 @@
 
         </div>
 
+        <!-- POPUPS -->
+
+        <!-- POPUP 1 -->
+
+        <div class="popup" id="popup1">
+
+          <div class="popup__content">
+
+            <button class="popup__close">×</button>
+
+            <video
+              class="popup__media"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source
+                src="assets/no pesticide.mov"
+                type="video/mp4"
+              />
+            </video>
+
+            <div class="popup__overlay">
+
+              <h2>
+                Zero Chemical Pesticides
+              </h2>
+
+              <p>
+                We handmade our pesticides for each predators
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+<!-- POPUP 2 -->
+
+        <div class="popup" id="popup2">
+
+          <div class="popup__content">
+        
+            <button class="popup__close">×</button>
+
+            <video
+              class="popup__media"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source
+                src="assets/no artificial fertilizer.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <div class="popup__overlay">
+
+              <h2>
+                No Artificial Fertilizers
+              </h2>
+
+              <p>
+                We make fertilizers from organic materials
+              </p>
+
+            </div>
+
+          </div>
+        
+        </div>
+
+        <!-- POPUP 3 -->
+
+        <div class="popup" id="popup3">
+
+          <div class="popup__content">
+
+            <button class="popup__close">×</button>
+
+<video
+              class="popup__media"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source
+                src="assets/no herbcide.mov"
+                type="video/mp4"
+              />
+            </video>
+
+            <div class="popup__overlay">
+
+              <h2>
+                No Toxic Herbicides
+              </h2>
+
+              <p>
+                We cut weeds one by one without using chemicals that destroy the ecosystem
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <!-- EXTRA SECTION -->
 
-      <section class="two-col">
+      <section class="farmer">
 
-        <div class="card card--text">
+        <img
+          class="farmer__image"
+          src="assets/IMG_0381.jpg"
+          alt="Pak Putu"
+        />
 
-          <h2 class="section-title section-title--left">
-            Working With Nature
+        <div class="farmer__overlay"></div>
+
+        <div class="farmer__content">
+
+          <h2 class="farmer__title">
+            Meet The Farmer
           </h2>
 
-          <p class="muted">
-            Our rice fields are carefully managed
-            using natural farming systems that protect soil health,
-            biodiversity, and Bali’s water ecosystems.
+          <p class="farmer__text">
+            Introducing Pak Putu, the farmer behind Honomi, who carefully grows and takes care of every grain by hand from start to finish.
           </p>
-
-          <p class="muted">
-            By avoiding harmful chemicals,
-            we create a cleaner and safer environment
-            for farmers, consumers, and future generations.
-          </p>
-
-        </div>
-
-        <div class="card card--image">
-
-          <img
-            src="assets/IMG_7355.jpg"
-            alt="Rice farming in Bali"
-          />
 
         </div>
 
       </section>
+
+			<!-- PROCESS SECTION -->
+
+			<section class="process-section">
+
+				<h2 class="section-title">
+					Our Rice Process
+				</h2>
+
+				<div class="process-flow">
+
+					<!-- STEP 1 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/plowing.mov"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Plowing
+							</h3>
+
+							<p>
+								The soil is plowed to loosen the earth, turn over weeds naturally, and create a flat surface for planting.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 2 -->
+
+					<article class="process-card">
+
+						<img
+							src="assets/seedling.png"
+							alt="Step 2"
+						/>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Seedling
+							</h3>
+
+							<p>
+								Rice seedlings are first grown in small nursery beds for around 30–50 days before being transplanted by hand into the rice fields.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 3 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/ezyZip.mp4"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Planting
+							</h3>
+
+							<p>
+								Each seedling is planted one by one by hand at carefully measured points across the field.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 4 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/irrigation.mov"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Irrigation
+							</h3>
+
+							<p>
+								A shallow layer of water is maintained in the paddies to support healthy rice growth, regulate soil temperature, and naturally suppress weeds.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 5 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/Weeding & fertilizing.mov"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Weeding & Fertilizing
+							</h3>
+
+							<p>
+								Weeds around the paddies are removed by hand to ensure nutrients go directly to the rice plants. Natural fertilizers are applied to support healthy growth.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 6 -->
+
+					<article class="process-card">
+
+						<img
+							src="assets/pest.png"
+							alt="Step 6"
+						/>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Pest Control
+							</h3>
+
+							<p>
+								Instead of using chemicals, Pak Putu creates handmade tools and works alongside nature, including allowing owls to live near the fields, to gently drive pests away without harming other living creatures.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 7 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/Harvesting.mov"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Harvesting
+							</h3>
+
+							<p>
+								Once the rice plants turn golden and fully mature, the rice is carefully harvested.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 8 -->
+
+					<article class="process-card">
+
+						<img
+							src="assets/drying.png"
+							alt="Step 8"
+						/>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Drying
+							</h3>
+
+							<p>
+								After harvesting, the rice is dried either naturally under the sun or with drying machines until it reaches the ideal moisture level to preserve quality and prevent spoilage.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 9 -->
+
+					<article class="process-card">
+
+						<video
+							autoplay
+							muted
+							loop
+							playsinline
+						>
+							<source
+								src="assets/Milling.mov"
+								type="video/mp4"
+							/>
+						</video>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Milling
+							</h3>
+
+							<p>
+								The rice is milled to remove the outer husk while preserving the flavor of each grain.
+							</p>
+
+						</div>
+
+					</article>
+
+					<div class="process-arrow">→</div>
+
+					<!-- STEP 10 -->
+
+					<article class="process-card">
+
+						<img
+							src="assets/Honomi package design.png"
+							alt="Step 10"
+						/>
+
+						<div class="process-card__overlay">
+
+							<h3>
+								Packaging & Sealing
+							</h3>
+
+							<p>
+								Each package is carefully filled, sealed, and prepared by hand to ensure freshness and quality before reaching customers.
+							</p>
+
+						</div>
+
+					</article>
+
+				</div>
+
+			</section>
 
       <!-- BACK BUTTON -->
 
@@ -212,5 +626,47 @@
       String(new Date().getFullYear());
   </script>
 
+<script>
+
+  const offers = document.querySelectorAll('.offer');
+  const popups = document.querySelectorAll('.popup');
+  const closeButtons = document.querySelectorAll('.popup__close');
+
+  offers.forEach((offer) => {
+
+    offer.addEventListener('click', () => {
+
+      const popupId = offer.dataset.popup;
+      const popup = document.getElementById(popupId);
+
+      popup.classList.add('active');
+
+    });
+
+  });
+
+  closeButtons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+
+      button.closest('.popup').classList.remove('active');
+
+    });
+
+  });
+
+  popups.forEach((popup) => {
+
+    popup.addEventListener('click', (e) => {
+
+      if(e.target === popup){
+        popup.classList.remove('active');
+      }
+
+    });
+
+  });
+
+</script>
 </body>
 </html>
