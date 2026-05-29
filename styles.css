@@ -313,6 +313,151 @@ a{
   transform:translateY(-4px);
 }
 
+.offer{
+  cursor:pointer;
+}
+
+/* POPUP */
+
+.popup{
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.72);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:.25s;
+
+  z-index:9999;
+}
+
+.popup.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.popup__content{
+  position:relative;
+
+  width:min(92vw, 900px);
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+}
+
+.popup__content img,
+.popup__content video{
+  width:100%;
+  height:75vh;
+
+  object-fit:cover;
+
+  display:block;
+}
+
+.popup__overlay{
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:40px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.72),
+      rgba(0,0,0,.15) 55%,
+      rgba(0,0,0,0)
+    );
+
+  color:#fff;
+}
+
+.popup__overlay h2{
+  margin:0 0 12px;
+
+  font-size:34px;
+
+  letter-spacing:.04em;
+
+  text-transform:uppercase;
+}
+
+.popup__overlay p{
+  margin:0;
+
+  max-width:650px;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+  color:rgba(255,255,255,.92);
+}
+
+.popup__close{
+  position:absolute;
+
+  top:16px;
+  right:16px;
+
+  width:44px;
+  height:44px;
+
+  border:none;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.18);
+
+  color:#fff;
+
+  font-size:28px;
+
+  cursor:pointer;
+
+  z-index:10;
+
+  backdrop-filter:blur(6px);
+}
+
+.popup__close:hover{
+  background:rgba(255,255,255,.30);
+}
+
+/* MOBILE */
+
+@media (max-width:760px){
+
+  .popup__content img{
+    height:70vh;
+  }
+
+  .popup__overlay{
+    padding:24px;
+  }
+
+  .popup__overlay h2{
+    font-size:24px;
+  }
+
+}
+
 .offer__img{
   width:220px;
   height:220px;
@@ -396,6 +541,221 @@ a{
   object-fit:cover;
 
   min-height:280px;
+}
+
+/* FARMER SECTION */
+
+.farmer{
+  position:relative;
+
+  height:520px;
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  margin-bottom:18px;
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.12);
+}
+
+.farmer__image{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center 10%;
+}
+
+.farmer__overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.65) 0%,
+      rgba(0,0,0,.15) 45%,
+      rgba(0,0,0,.10) 100%
+    );
+}
+
+.farmer__content{
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  padding:34px;
+
+  color:#fff;
+
+  z-index:2;
+}
+
+.farmer__title{
+  margin:0;
+
+  font-size:38px;
+
+  letter-spacing:.04em;
+
+  text-transform:uppercase;
+
+  text-shadow:
+    0 4px 18px rgba(0,0,0,.35);
+}
+
+.farmer__text{
+  margin:0;
+
+  width:100%;
+
+  font-size:15px;
+
+  line-height:1.7;
+
+  color:rgba(255,255,255,.92);
+
+  max-width:900px;
+}
+
+/* MOBILE */
+
+@media (max-width:760px){
+
+  .farmer{
+    height:420px;
+  }
+
+  .farmer__title{
+    font-size:28px;
+  }
+
+  .farmer__content{
+    padding:22px;
+  }
+
+}
+
+/* PROCESS SECTION */
+
+.process-section{
+  padding:20px 0 40px;
+}
+
+.process-flow{
+  display:flex;
+  align-items:center;
+  gap:18px;
+
+  overflow-x:auto;
+
+  padding-bottom:12px;
+}
+
+.process-card{
+  position:relative;
+
+  width:280px;
+  height:280px;
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  flex-shrink:0;
+
+  box-shadow:
+    0 16px 36px rgba(0,0,0,.12);
+
+  transition:.25s;
+}
+
+.process-card:hover{
+  transform:translateY(-6px);
+}
+
+.process-card img,
+.process-card video{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+}
+
+.process-card__overlay{
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:20px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.72),
+      rgba(0,0,0,.18) 55%,
+      rgba(0,0,0,0)
+    );
+
+  color:#fff;
+}
+
+.process-card__overlay h3{
+  margin:0 0 8px;
+
+  font-size:18px;
+
+  letter-spacing:.04em;
+
+  text-transform:uppercase;
+}
+
+.process-card__overlay p{
+  margin:0;
+
+  font-size:13px;
+
+  line-height:1.5;
+
+  color:rgba(255,255,255,.92);
+}
+
+.process-arrow{
+  font-size:38px;
+
+  color:#988e42;
+
+  font-weight:700;
+
+  flex-shrink:0;
+}
+
+/* MOBILE */
+
+@media (max-width:520px){
+
+  .process-card{
+    width:160px;
+    height:240px;
+  }
+
+  .process-arrow{
+    font-size:28px;
+  }
+
 }
 
 /* STORY SECTION (NEW) */
