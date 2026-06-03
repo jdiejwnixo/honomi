@@ -131,6 +131,10 @@ a{
   color:#f5f1e8;
 }
 
+.hero__top--home{
+  justify-content:flex-start;
+}
+
 .brand{
   display:flex;
   align-items:center;
@@ -144,6 +148,16 @@ a{
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.brand__mark--home{
+  border-radius:999px;
+
+  transition:.2s;
+}
+
+.brand__mark--home:hover{
+  transform:translateY(-2px);
 }
 
 .brand__mark img{
@@ -495,6 +509,12 @@ a{
   padding:0 0 18px;
 }
 
+.product-buy{
+  grid-template-columns:minmax(220px, .72fr) minmax(0, 1.28fr);
+
+  align-items:stretch;
+}
+
 .two-col .card{
   border-radius:var(--radius);
 
@@ -541,6 +561,53 @@ a{
   object-fit:cover;
 
   min-height:280px;
+}
+
+.product-card{
+  position:relative;
+}
+
+.product-card img{
+  min-height:360px;
+}
+
+.product-card__overlay{
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:28px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.72),
+      rgba(0,0,0,.26) 58%,
+      rgba(0,0,0,.08)
+    );
+
+  color:#fff;
+}
+
+.product-card__overlay .section-title{
+  color:#fff;
+
+  text-shadow:0 8px 22px rgba(0,0,0,.35);
+}
+
+.product-card__overlay p{
+  max-width:420px;
+
+  margin:0;
+
+  font-size:15px;
+  line-height:1.7;
+
+  color:rgba(255,255,255,.92);
 }
 
 /* FARMER SECTION */
@@ -803,6 +870,16 @@ a{
   padding:24px 12px 28px;
 }
 
+.product-buy .contact{
+  margin-top:0;
+
+  border-radius:var(--radius);
+
+  padding:12px;
+
+  overflow:hidden;
+}
+
 .contact__inner{
   background:rgba(255, 255, 255, 0.3);
 
@@ -811,6 +888,18 @@ a{
   padding:24px;
 
   backdrop-filter:blur(6px);
+}
+
+.product-buy .contact__inner{
+  height:100%;
+
+  padding:18px;
+}
+
+.product-buy .contact .section-title{
+  margin-bottom:14px;
+
+  text-align:left;
 }
 
 /* BUY LINKS */
@@ -822,6 +911,12 @@ a{
   gap:16px;
 
   margin-top:20px;
+}
+
+.product-buy .buy-links{
+  gap:12px;
+
+  margin-top:0;
 }
 
 .buy-link{
@@ -841,6 +936,10 @@ a{
     0 10px 25px rgba(0,0,0,.08);
 
   transition:.2s;
+}
+
+.product-buy .buy-link{
+  padding:16px 14px;
 }
 
 .buy-link:hover{
@@ -867,6 +966,18 @@ a{
 
   .two-col{
     grid-template-columns:1fr;
+  }
+
+  .product-buy{
+    grid-template-columns:1fr;
+  }
+
+  .product-card{
+    order:-1;
+  }
+
+  .product-card img{
+    min-height:300px;
   }
 
   .hero{
